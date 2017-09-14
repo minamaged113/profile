@@ -1,0 +1,1 @@
+This website is made a demonstration for my work in web development and also to showcase my own work.
