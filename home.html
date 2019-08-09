@@ -1,104 +1,137 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-us">
 
-	<head>
-		<meta charset="utf-8">
-		<title>M. Gabriel</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="site.webmanifest">
 
-		<link rel="manifest" href="site.webmanifest">
-		<link rel="apple-touch-icon" href="icon.png">
-		<!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" href="icon.png">
 
-		<meta name="theme-color" content="#fafafa">
-	</head>
+    <title>M. Gabriel</title>
+</head>
 
-	<body>
+<body>
 
-		<header>
-			<p>
-				Mina Gabriel
-			</p>
-		</header>
-		<p>
-			Hi there, you're in my personal webpage... Welcome!
-		</p>
-		
-		<script src="js/vendor/modernizr-3.7.1.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
+    <header>
+        <div class="image">
+            <img class="ProfilePicture" src="img/ProfilePicture.png">
+        </div>
+        <div class="userName">
+            Mina Gabriel
+        </div>
+        <div class="introductionStatement">
+            Software Engineer
+        </div>
+        <div class="downloadBtn">
+            <a class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">cloud_download</i>
+            </a>
+        </div>
 
-		<script>
-			window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-			ga('create', 'UA-145241617-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-		</script>
-		<script src="https://www.google-analytics.com/analytics.js" async></script>
+    </header>
 
-		<section>
-			<nav>
-				<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="#">Work Experience</a></li>
-				<li><a href="#">Languages</a></li>
-				<li><a href="#">Personal Projects</a></li>
-				<li><a href="#">Volunteering</a></li>
-				<li><a href="#">Contact Me</a></li>
-				</ul>
-			</nav>
-			
-			<article>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam accusamus illum consequatur voluptatem distinctio unde quidem dolorum provident incidunt officia quasi corrupti, assumenda harum minus ratione cumque esse qui.
-				</p>
-			</article>
 
-			<div class="CV-input">
-				<label for="education-CV-input-field">
-					<input id="education-CV-input-field" type="checkbox" name="CV-include-field" checked> Education
-				</label><br>
-				<label for="work-CV-input-field">
-					<input id="work-CV-input-field" type="checkbox" name="CV-include-field" checked> Work
-				</label><br>
-				<label for="language-CV-input-field">
-					<input id="language-CV-input-field" type="checkbox" name="CV-include-field" checked> Languages
-				</label><br>
-				<label for="projects-CV-input-field">
-					<input id="projects-CV-input-field" type="checkbox" name="CV-include-field" checked> Personal Projects
-				</label><br>
-				<label for="volunteer-CV-input-field">
-					<input id="volunteer-CV-input-field" type="checkbox" name="CV-include-field" checked> Volunteering
-				</label><br>			
-			</div>
 
-			<div class="contact-me">
-				<h4>Contact Me</h4>
-				<form action="/send-email">
-					<h3>Email</h3>
-					<input type="email" placeholder="Email" required>
-					<h3>Subject</h3>
-					<input type="text" placeholder="Subject" spellcheck="true" required>
-					<h3>Message</h3>
-					<input type="text" placeholder="Message body" spellcheck="true" required>
-					<button type="submit">Send</button>
-				</form>
-				
 
-			</div>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Work Experience</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Personal Projects</a></li>
+                <li><a href="#">Volunteering</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
 
-		</section>
+        <article>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam accusamus illum consequatur voluptatem distinctio unde quidem dolorum provident incidunt officia quasi corrupti, assumenda harum minus ratione cumque esse qui.
+            </p>
+        </article>
+        <form action="#">
+            <label for="education-CV-input-field">
+                <input id="education-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Education
+            </label><br>
+            <label for="work-CV-input-field">
+                <input id="work-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Work
+            </label><br>
+            <label for="language-CV-input-field">
+                <input id="language-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Languages
+            </label><br>
+            <label for="projects-CV-input-field">
+                <input id="projects-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Personal Projects
+            </label><br>
+            <label for="volunteer-CV-input-field">
+                <input id="volunteer-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Volunteering
+            </label><br>
+        </form>
 
-		<footer>
-			<p>
-				Footer is still under construction.
-			</p>
-		</footer>
-	</body>
+
+        <div class="contact-me">
+            <h4>Contact Me</h4>
+            <form action="/send-email">
+                <h5>Email</h5>
+                <input type="email" placeholder="Email" required>
+                <h5>Subject</h5>
+                <input type="text" placeholder="Subject" spellcheck="true" required>
+                <h5>Message</h5>
+                <input type="text" placeholder="Message body" spellcheck="true" required>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Send
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="socialProfiles">
+            <h6>Check out my other social profiles</h6>
+            <a href="#">
+                <img src="img/HackerRank_logo.png" class="fa fa-hackerrank socialMediaLogo">
+            </a>
+            <a href="#" class="fa fa-github socialMediaLogo"></a>
+        </div>
+        <div>
+
+        </div>
+    </footer>
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    window.ga = function() {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-145241617-1', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </html>

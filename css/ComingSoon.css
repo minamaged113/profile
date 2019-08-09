@@ -1,17 +1,15 @@
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
+
+body,
+html {
     height: 100%
-  }
-  
-  .bgimg {
-    /* Background image */
-    background-image: url('/w3images/forestbridge.jpg');
+}
+
+.bgimg {
     /* Full-screen */
     height: 100%;
     /* Center the background image */
     background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
     /* Add a black text color to all elements inside the .bgimg container */
@@ -20,48 +18,54 @@ body, html {
     font-family: "Courier New", Courier, monospace;
     /* Set the font-size to 25 pixels */
     font-size: 25px;
-  }
-  
-  /* Position text in the middle */
-  .middle {
+}
+
+
+/* Position text in the middle */
+
+.middle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  /* Style the <hr> element */
-  hr {
+}
+
+
+/* Style the <hr> element */
+
+hr {
     margin: auto;
     width: 40%;
-  }
+}
 
 
-  /* Clear floats after the columns */
-  section:after {
+/* Clear floats after the columns */
+
+section:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
+}
 
-
-  .fa {
+.fa {
     padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
+}
 
-  .fa-linkedin {
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
-  
+}
+
+@media (max-width: 400px) {
+    .bgimg {}
+}
