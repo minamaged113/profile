@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be325194bf.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="site.webmanifest">
 
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="apple-touch-icon" href="icon.png">
@@ -22,18 +23,11 @@
 
     <header>
         <div class="image">
-            <img class="ProfilePicture" src="img/ProfilePicture.png">
+            <img class="profilePicture" src="img/ProfilePicture.png" border="5">
         </div>
+        <hr>
         <div class="userName">
             Mina Gabriel
-        </div>
-        <div class="introductionStatement">
-            Software Engineer
-        </div>
-        <div class="downloadBtn">
-            <a class="btn-floating btn-large waves-effect waves-light red">
-                <i class="material-icons">cloud_download</i>
-            </a>
         </div>
 
     </header>
@@ -51,36 +45,57 @@
                 <li><a href="#">Personal Projects</a></li>
                 <li><a href="#">Volunteering</a></li>
                 <li><a href="#">Contact Me</a></li>
+                <li>
+                    <div class="downloadBtn">
+                        <a class="btn-floating waves-effect waves-light">
+                            <i class="material-icons">cloud_download</i>
+                        </a>
+                    </div>
+                </li>
             </ul>
+            <div class="mobileMenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
 
-        <article>
+        <div class="introduction-div">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam accusamus illum consequatur voluptatem distinctio unde quidem dolorum provident incidunt officia quasi corrupti, assumenda harum minus ratione cumque esse qui.
             </p>
-        </article>
-        <form action="#">
+        </div>
+        <form action="#" class="cv-input">
             <label for="education-CV-input-field">
-                <input id="education-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Education
+                <input id="education-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field"
+                    checked="checked"/> <span>Education</span>
             </label><br>
             <label for="work-CV-input-field">
-                <input id="work-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Work
+                <input id="work-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field"
+                    checked="checked"/> <span>Work</span>
             </label><br>
             <label for="language-CV-input-field">
-                <input id="language-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Languages
+                <input id="language-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field"
+                    checked="checked"/> <span>Languages</span>
             </label><br>
             <label for="projects-CV-input-field">
-                <input id="projects-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Personal Projects
+                <input id="projects-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field"
+                    checked="checked"/> <span>Personal Projects</span>
             </label><br>
             <label for="volunteer-CV-input-field">
-                <input id="volunteer-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field" checked="checked"> Volunteering
+                <input id="volunteer-CV-input-field" class="filled-in" type="checkbox" name="CV-include-field"
+                    checked="checked"/> <span>Volunteering</span> 
             </label><br>
+            <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Filled in</span>
+            </label>
         </form>
 
 
         <div class="contact-me">
             <h4>Contact Me</h4>
-            <form action="/send-email">
+            <form action="send-email">
                 <h5>Email</h5>
                 <input type="email" placeholder="Email" required>
                 <h5>Subject</h5>
@@ -98,12 +113,20 @@
     </section>
 
     <footer>
+        <h6>Check out my other social profiles</h6>
+        <hr>
         <div class="socialProfiles">
-            <h6>Check out my other social profiles</h6>
-            <a href="#">
-                <img src="img/HackerRank_logo.png" class="fa fa-hackerrank socialMediaLogo">
-            </a>
-            <a href="#" class="fa fa-github socialMediaLogo"></a>
+
+            <div>
+                <i class="fab fa-hackerrank socialMediaLogo"></i>
+            </div>
+            <div>
+                <a href="#" class="fab fa-github socialMediaLogo"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/minamaged113/" class="fab fa-linkedin socialMediaLogo"></a>
+            </div>
+
         </div>
         <div>
 
